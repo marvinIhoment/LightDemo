@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LightDemo'
-  s.version          = '1.0.2'
+  s.version          = '1.0.4'
   s.summary          = 'Light Project Demo.'
 
 # This description is used to generate tags and improve search results.
