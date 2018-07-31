@@ -12,7 +12,11 @@
 
 + (UIViewController *)showLightDemoVC {
 //    UIViewController *controller = InstantiateVCFromStoryboard(@"LightMain", @"LLViewController");
-    UIViewController *controller = InstantiateVCFromBundleStoryboard(@"LightMain", @"LLViewController", [NSBundle mainBundle]);
+
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LightMain" bundle:bundle];
+    UIViewController *controller = [sb instantiateViewControllerWithIdentifier:@"LLViewController"];
+    
     return controller;
 }
 
