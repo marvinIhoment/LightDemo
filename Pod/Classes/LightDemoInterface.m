@@ -11,7 +11,8 @@
 @implementation LightDemoInterface
 
 + (UIViewController *)showLightDemoVC {
-    UIViewController *controller = InstantiateVCFromStoryboard(@"LightMain", @"LLViewController");
+//    UIViewController *controller = InstantiateVCFromStoryboard(@"LightMain", @"LLViewController");
+    UIViewController *controller = InstantiateVCFromBundleStoryboard(@"LightMain", @"LLViewController", [NSBundle mainBundle]);
     return controller;
 }
 
