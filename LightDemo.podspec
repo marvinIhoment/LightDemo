@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LightDemo'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LightDemo.'
+  s.version          = '1.0.0'
+  s.summary          = 'Light Project Demo.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,13 +28,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/marvinIhoment/LightDemo.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/**/*.{h,m}'
   
   s.resource_bundles = {
-    'LightDemo' => ['Pod/Classes/**/*. 
-	{storyboard,xib,xcassets,json,imageset,png}']
+    'LightDemo' => ['Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
